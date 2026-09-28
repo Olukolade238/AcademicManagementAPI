@@ -12,7 +12,7 @@ namespace AcademicManagement.DAL.Entities
         public string CourseCode { get; set; } = string.Empty;
         public string CourseName { get; set; } = string.Empty;
         public int InstructorId { get; set; }
-        public Instructor Instructor { get; set; } = null!;
+        public Instructor Instructor { get; set; } = null;
         public ICollection<Enrollment> Enrollments { get; set; } = new List<Enrollment>();
     }
 }
