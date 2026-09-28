@@ -8,10 +8,9 @@ namespace AcademicManagement.DAL.Entities
 {
     public class Instructor
     {
-        public int StudentId { get; set; }
-        public Student Student { get; set; } = null;
-        public int CourseId { get; set; }
-        public Course Course { get; set; } = null;
-        public DateTime EnrolledOn { get; set; }
+        public int InstructorId { get; set; }
+        public string FullName { get; set; } = string.Empty;
+        public string Email { get; set; } = string.Empty;
+        public ICollection<Course> Courses { get; set; } = new List<Course>();
     }
 }
