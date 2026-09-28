@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="AcademicManagementAPI/AcademicManagementAPI.csproj" />
+  <Project Path="InstituteManagement.BLL/InstituteManagement.BLL.csproj" />
+</Solution>
