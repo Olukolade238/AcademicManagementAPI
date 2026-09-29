@@ -59,7 +59,79 @@ namespace AcademicManagement.DAL.Data
                 .WithOne(e => e.Course)
                 .HasForeignKey(e => e.CourseId);
 
-            
+            modelBuilder.Entity<Institute>().HasData(
+                new Institute
+                {
+                    InstituteId = 1,
+                    Name = "Northstar Institute",
+                    City = "Winnipeg"
+                },
+                new Institute
+                {
+                    InstituteId = 2,
+                    Name = "Riverside Institute",
+                    City = "Brandon"
+                }
+            );
+
+            modelBuilder.Entity<Instructor>().HasData(
+                new Instructor
+                {
+                    InstructorId = 1,
+                    FullName = "Sarah Johnson",
+                    Email = "sarah@example.com"
+                },
+                new Instructor
+                {
+                    InstructorId = 2,
+                    FullName = "David Brown",
+                    Email = "david@example.com"
+                }
+            );
+
+            modelBuilder.Entity<Course>().HasData(
+                new Course
+                {
+                    CourseId = 1,
+                    CourseCode = "WEB101",
+                    CourseName = "Web Development",
+                    InstructorId = 1
+                },
+                new Course
+                {
+                    CourseId = 2,
+                    CourseCode = "DB101",
+                    CourseName = "Database Fundamentals",
+                    InstructorId = 2
+                }
+            );
+
+            modelBuilder.Entity<Student>().HasData(
+                new Student
+                {
+                    StudentId = 1,
+                    FirstName = "John",
+                    LastName = "Smith",
+                    Email = "john@example.com",
+                    InstituteId = 1
+                },
+                new Student
+                {
+                    StudentId = 2,
+                    FirstName = "Mary",
+                    LastName = "Brown",
+                    Email = "mary@example.com",
+                    InstituteId = 1
+                },
+                new Student
+                {
+                    StudentId = 3,
+                    FirstName = "Alex",
+                    LastName = "Wilson",
+                    Email = "alex@example.com",
+                    InstituteId = 2
+                }
+            );
         }
     }
 }
