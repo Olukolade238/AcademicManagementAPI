@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InstituteManagement.BLL.DTOs
+namespace AcademicManagement.DAL.Repository
 {
-    internal class CourseDtos
+    internal class StudentRepository
     {
     }
 }

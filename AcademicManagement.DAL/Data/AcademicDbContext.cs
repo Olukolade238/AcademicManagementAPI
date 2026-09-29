@@ -77,7 +77,6 @@ namespace AcademicManagement.DAL.Data
                 .Property(e => e.Grade)
                 .HasColumnType("decimal(5,2)");
 
-            // Seed data
             modelBuilder.Entity<Department>().HasData(
                 new Department { DepartmentId = 1, Name = "Software Development 001", Code = "SD101" },
                 new Department { DepartmentId = 2, Name = "Business Administration 001", Code = "BA101" }
