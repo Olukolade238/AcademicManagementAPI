@@ -1,4 +1,7 @@
 
+using AcademicManagement.DAL.Data;
+using Microsoft.EntityFrameworkCore;
+
 namespace AcademicManagementAPI
 {
     public class Program
@@ -10,6 +13,10 @@ namespace AcademicManagementAPI
             // Add services to the container.
 
             builder.Services.AddControllers();
+
+            builder.Services.AddDbContext<AcademicDbContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
 
