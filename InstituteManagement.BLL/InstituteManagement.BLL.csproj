@@ -11,9 +11,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DTOs\" />
     <Folder Include="Mapping\" />
     <Folder Include="Validation\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="16.2.0" />
   </ItemGroup>
 
 </Project>
