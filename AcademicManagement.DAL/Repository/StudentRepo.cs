@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 
 namespace AcademicManagement.DAL.Repository
 {
-    public class StudentRepository
+    public class StudentRepo
     {
         private readonly AcademicDbContext _context;
-        public StudentRepository(AcademicDbContext context)
+        public StudentRepo(AcademicDbContext context)
         {
             _context = context;
         }

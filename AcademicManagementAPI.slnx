@@ -1,5 +1,5 @@
 <Solution>
   <Project Path="AcademicManagement.DAL/AcademicManagement.DAL.csproj" />
   <Project Path="AcademicManagementAPI/AcademicManagementApi.csproj" />
-  <Project Path="InstituteManagement.BLL/InstituteManagement.BLL.csproj" />
+  <Project Path="InstituteManagement.BLL/AcademicManagement.BLL.csproj" />
 </Solution>
