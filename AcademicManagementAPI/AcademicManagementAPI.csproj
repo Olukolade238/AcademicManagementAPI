@@ -18,7 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AcademicManagement.DAL\AcademicManagement.DAL.csproj" />
-    <ProjectReference Include="..\InstituteManagement.BLL\InstituteManagement.BLL.csproj" />
+    <ProjectReference Include="..\InstituteManagement.BLL\AcademicManagement.BLL.csproj" />
   </ItemGroup>
 
 </Project>

@@ -7,20 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InstituteManagement.BLL.Services
+namespace AcademicManagement.BLL.Services
 {
     public class CourseService
     {
-        private readonly CourseRepo _repository;
-
-        public CourseService(CourseRepo repository)
+        private readonly CourseRepo _repo;
+        public CourseService(CourseRepo repo)
         {
-            _repository = repository;
+            _repo = repo;
         }
-
         public async Task<IEnumerable<CourseDto>> GetCoursesAsync()
         {
-            var courses = await _repository.GetAllAsync();
+            var courses = await _repo.GetAllAsync();
             return courses.ToDtoList();
         }
     }
