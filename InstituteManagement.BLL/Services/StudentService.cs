@@ -69,7 +69,6 @@ namespace AcademicManagement.BLL.Services
 
             await _studentRepository.AddAsync(student);
             await _studentRepository.SaveChangesAsync();
-
             var created = await _studentRepository.GetByIdAsync(student.StudentId);
 
             return _mapper.Map<StudentDto>(created);
