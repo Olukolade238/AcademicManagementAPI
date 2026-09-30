@@ -8,14 +8,14 @@ namespace AcademicManagementApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class StudentController : ControllerBase
+    public class StudentsController : ControllerBase
     {
         private readonly StudentService _studentService;
         private readonly IValidator<CreateStudentDto> _createValidator;
         private readonly IValidator<UpdateStudentDto> _updateValidator;
         private readonly IValidator<PatchStudentDto> _patchValidator;
         private readonly IValidator<CreateEnrollmentDto> _enrollmentValidator;
-        public StudentController(
+        public StudentsController(
             StudentService studentService,
             IValidator<CreateStudentDto> createValidator,
             IValidator<UpdateStudentDto> updateValidator,

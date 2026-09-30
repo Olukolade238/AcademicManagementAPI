@@ -7,11 +7,11 @@ namespace AcademicManagementApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class DepartmentController : ControllerBase
+    public class DepartmentsController : ControllerBase
     {
         private readonly DepartmentService _departmentService;
         private readonly IValidator<CreateDepartmentDto> _validator;
-        public DepartmentController(
+        public DepartmentsController(
             DepartmentService departmentService,
             IValidator<CreateDepartmentDto> validator)
         {
